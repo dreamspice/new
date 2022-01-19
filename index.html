@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +9,34 @@
 </head>
 <body>
   
-    <div class="header">
+    <div class="header" id="header">
       <div class="logo">
-        <h1>OurLogo</h1>
+        <div class="text">
+        <h1>lak-mar</h1>
+        </div>
+        <div class="car-icon">
+          <img src="car-icon2.svg" alt="" srcset="">
+        </div>
       </div>
       <div class="navbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Usługi</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </div>
     </div>
     
-    <div class="container-1">
+    <div class="container-1" id="home">
       <div class="container-1_text">
-      <h1>Welcome To Our Site!<h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-        <a href="#">Learn More</a>
+     <h1>Twój samochód - Twój wybór</h1>
+       <p>Warsztat samochodowy stworzony z pasji.</p>
+       <p>Sprawdź nasze usługi.</p>
+        <a href="#services">Sprawdź!</a>
         </div>
     </div>
         
-    <div class="container-2">
+    <div id="services" class="container-2">
       <div class="container-2_items">
         <div class="container-2_item">
           <h3>Cool Feature #1</h3>
@@ -70,9 +76,16 @@
         </div>
       </div>
         </div>
-        
+        </svg>
         <footer>
-           <p>&copy; 2022 Dreamspice</p>
+           <p>&copy; 2022 Dreamspice #1</p>
         </footer>
+        <svg xmlns="http://www.w3.org/2000/svg" id="contact-icon" class="icon icon-tabler icon-tabler-phone-call" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3F51B5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+          <path d="M15 7a2 2 0 0 1 2 2" />
+          <path d="M15 3a6 6 0 0 1 6 6" />
+        </svg>
+        </svg>
     </body>
 </html>

@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+html {
+  scrollbar-color: smooth;
+}
+
 
 body {
   margin: 0;
@@ -16,11 +21,26 @@ body {
   padding: 20px;
   position: sticky;
   top: 0;
+  z-index: 1;
+}
+
+.container-1 .logo {
+  margin-left: 20px;
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.car-icon {
+  width: 60px;
+  display: block;
   margin-left: 20px;
 }
+
 
 .navbar ul {
   display: flex;
@@ -45,7 +65,10 @@ body {
 
 .container-1 h1 {
   font-size: 3rem;
+  font-weight: 900;
+  color: #3F51B5;
 }
+
 
 .container-1 p {
   font-weight: 400;
@@ -63,15 +86,31 @@ body {
   display: inline-block;
 }
 
+
 .container-1_text {
   max-width: 760px;
+  position: relative;
 }
+
 
 .container-1 {
   display: flex;
   justify-content: center;
   background-color: #C5CAE9;
-  padding: 20px;
+  padding: 200px 20px;
+  position: relative;
+}
+
+.container-1::before {
+  content: "";
+  background-image: url("car.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0.4;
 }
 
 .container-2 h3 {
@@ -150,3 +189,8 @@ footer {
   }
 }
 
+#contact-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
