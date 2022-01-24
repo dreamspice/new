@@ -22,6 +22,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 .container-1 .logo {
@@ -30,6 +32,7 @@ body {
 
 .logo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-left: 10px;
@@ -125,18 +128,34 @@ body {
   padding: 50px 40px;
 }
 
+
+.img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#opona {
+  width: 60px;
+  height :60px;
+}
+
+
 .container-2_items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
+  justify-items: center;
+  align-items: center;
   max-width: 1200px;
-  grid-column-gap: 45px;
-  grid-row-gap: 45px;
+  grid-column-gap: 150px;
+  grid-row-gap: 150px;
+  text-align: center;
 }
 
-.container-2 p {
-  margin: 0;
-  line-height: 1.6;
+.container-2 h3 {
+
+  font-weight: 700;
 }
 
 footer {
@@ -151,7 +170,7 @@ footer {
     font-size: 1.2em;
   }
   .container-1_text p {
-    font-size: 0.5em;
+    font-size: 24px;
   }
   .container-1_text h1 {
     font-size: 2.6em;
@@ -167,25 +186,45 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .logo h1 {
+  .header {
+    display: flex;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+  .navbar ul {
+    padding: 5px;
+    margin-left: 5px;
+  }
+  .text h1 {
     font-size: 1em;
   }
   .navbar a {
     font-size: 0.8em;
   }
   .container-1_text p {
-    font-size: 0.4em;
+    font-size: 1.2em;
   }
   .container-1_text h1 {
     font-size: 2.4em;
   }
    .container-1_text a {
-    font-size: 0.5em;
+    font-size: 1em;
   }
   .container-2_items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     font-size: 0.9em;
+  }
+  .form h1 {
+    font-size: 2rem;
+  }
+  input {
+    font-size: 0.8rem;
+  }
+  .form {
+    width: 200px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -193,4 +232,68 @@ footer {
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+
+.container-for-form {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #5C6BC0, #C5CAE9);
+  padding: 20px;
+}
+
+.form {
+  max-width: 1500px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+.container-for-form .title {
+  font-size: 2remz;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+
+.submit {
+  background: linear-gradient(135deg, #5C6BC0, #C5CAE9);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  border-radius: 5px;
+}
+
+.input-box {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+label {
+  font-size: 2rem;
+
 }

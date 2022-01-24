@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Web</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
   
@@ -22,7 +23,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#services">Usługi</a></li>
-          <li><a href="#">Kontakt</a></li>
+          <li><a href="#contact">Kontakt</a></li>
         </ul>
       </div>
     </div>
@@ -39,53 +40,58 @@
     <div id="services" class="container-2">
       <div class="container-2_items">
         <div class="container-2_item">
-          <h3>Cool Feature #1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
+          <img class="img" id="opona" src="296712.svg">
+          <h3>Mechanika pojazdowa</h3>
         </div>
         <div class="container-2_item">
-          <h3>Cool Feature #2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
+          <img class="img" id="opona" src="296712.svg">
+         <h3>Serwis klimatyzacji<h3>
         </div>
         <div class="container-2_item">
-          <h3>Cool Feature #3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
+          <img class="img" id="opona" src="296712.svg">
+          <h3>Diagnostyka komputerowa</h3>
         </div>
         <div class="container-2_item">
-          <h3>Cool Feature #4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
+          <img class="img" id="opona" src="296712.svg">
+        <h3>Konserwacja podwozi<h3>
         </div>
         <div class="container-2_item">
-          <h3>Cool Feature #5</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
+          <img class="img" id="opona" src="150133.svg">
+         <h3>Wymiana opon<h3>
         </div>
         <div class="container-2_item">
-          <h3>Cool Feature #6</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
-        </div>
-        <div class="container-2_item">
-          <h3>Cool Feature #7</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
-        </div>
-        <div class="container-2_item">
-          <h3>Cool Feature #8</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
-        </div>
-        <div class="container-2_item">
-          <h3>Cool Feature #9</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga, quod, eligendi iusto tenetur culpa veniam animi minus odit cupiditate, ducimus accusamus quaerat numquam odio corporis earum cum harum dolorem.</p>
-        </div>
+          <img id="opona" class="img" src="150133.svg">
+          <h3>Sprzedaż opon<h3>
+         </div>
       </div>
         </div>
         </svg>
+        </div>
+
+        <div class="container-for-form" id="contact">
+        <div class="form">
+        <form action="https://formsubmit.co/basicuser00@protonmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="title">Skantaktuj się z nami</div>
+          <div class="user-details">
+          <div class="input-box">
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Wpisz swojego maila" required>
+          </div>
+          <div class="input-box">
+            <label for="text">Wiadomość:</label>
+            <input type="text" name="text" placeholder="Wpisz wiadomość"></input>
+          </div>
+          <button class="submit" type="submit">Wyślij</button>
+     </form>
+    </div>
+    </div>
+  </div>
+  </div>
+
         <footer>
            <p>&copy; 2022 Dreamspice #1</p>
         </footer>
-        <svg xmlns="http://www.w3.org/2000/svg" id="contact-icon" class="icon icon-tabler icon-tabler-phone-call" width="68" height="68" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3F51B5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          <path d="M15 7a2 2 0 0 1 2 2" />
-          <path d="M15 3a6 6 0 0 1 6 6" />
-        </svg>
-        </svg>
     </body>
 </html>
+
